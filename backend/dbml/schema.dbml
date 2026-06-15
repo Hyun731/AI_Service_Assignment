@@ -1,0 +1,28 @@
+Table users {
+  id integer [pk, increment]
+  name varchar(80) [not null]
+  created_at datetime [not null]
+}
+
+Table study_sessions {
+  id integer [pk, increment]
+  user_id integer [not null, ref: > users.id]
+  subject varchar(120) [not null]
+  started_at datetime [not null]
+  ended_at datetime
+  duration_seconds integer
+  is_active boolean [not null]
+}
+
+Table drowsiness_logs {
+  id integer [pk, increment]
+  session_id integer [not null, ref: > study_sessions.id]
+  detected_at datetime [not null]
+  is_drowsy boolean [not null]
+  probability float [not null]
+  ear float
+  eye_closed_duration_ms integer
+  face_pitch float
+  face_yaw float
+  face_roll float
+}

@@ -1,0 +1,11 @@
+.venv/
+.venv311/
+__pycache__/
+*.pyc
+.DS_Store
+
+backend/sleep_study.db
+modeling/artifacts/
+
+frontend/node_modules/
+frontend/dist/

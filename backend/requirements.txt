@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic
+python-multipart
+httpx2
+numpy
+scikit-learn
+joblib
+opencv-python
+mediapipe==0.10.14

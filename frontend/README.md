@@ -1,0 +1,12 @@
+# Sleep Study Guard Frontend
+
+React webcam dashboard for the FastAPI drowsiness detection backend.
+
+## Run
+
+```bash
+npm install
+npm run dev
+```
+
+The app expects the backend at `http://localhost:8000`.
